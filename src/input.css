@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+.font-overpass {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    font-style: normal;
+}
+
+
+@theme {
+    /* Primary */
+    --color-cust-orange-500: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --color-cust-grey-500: hsl(217, 12%, 63%);
+    --color-cust-grey-900: hsl(213, 19%, 18%);
+    --color-cust-grey-950: hsl(216, 12%, 8%);
+
+    /* font size */
+    --text-para: 15px;
+
+    /* screen size */
+    --breakpoint-mobile: 375px;
+}
+
+@layer components {
+    .flex-center {
+        @apply flex justify-center items-center
+    }
+
+    .rate-btn {
+        @apply bg-cust-grey-900 rounded-full shrink-0 md:size-13 size-12 hover:bg-cust-orange-500 hover:text-cust-grey-950 cursor-pointer;
+    }
+
+    .selected {
+        @apply bg-white text-cust-grey-950
+    }
+
+    p {
+        @apply text-para
+    }
+}
