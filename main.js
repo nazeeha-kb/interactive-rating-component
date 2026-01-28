@@ -3,7 +3,7 @@ const ratingState = document.getElementById("rating-state");
 const thankYouState = document.getElementById("thank-you-state");
 const ratingDisplay = document.getElementById("rating-display");
 const ratings = document.querySelectorAll("#rating");
-var currRating = 0;
+let currRating = 0;
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
