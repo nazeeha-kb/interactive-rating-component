@@ -45,20 +45,20 @@
       </div>
 
       <form class="space-y-7" id="form">
-        <fieldset class="flex justify-between">
-          <button type="button" id="rating" class="rate-btn flex-center">1</button>
-          <button type="button" id="rating" class="rate-btn flex-center">2</button>
-          <button type="button" id="rating" class="rate-btn flex-center">3</button>
-          <button type="button" id="rating" class="rate-btn flex-center">4</button>
-          <button type="button" id="rating" class="rate-btn flex-center">5</button>
+        <fieldset class="flex justify-between" role="radiogroup" aria-label="Rating">
+          <button type="button" class="rate-btn rating flex-center" data-value="1" aria-pressed="false">1</button>
+          <button type="button" class="rate-btn rating flex-center" data-value="2" aria-pressed="false">2</button>
+          <button type="button" class="rate-btn rating flex-center" data-value="3" aria-pressed="false">3</button>
+          <button type="button" class="rate-btn rating flex-center" data-value="4" aria-pressed="false">4</button>
+          <button type="button" class="rate-btn rating flex-center" data-value="5" aria-pressed="false">5</button>
         </fieldset>
 
-        <button
+        <button id="submit-btn"
           class="cursor-pointer bg-cust-orange-500 text-cust-grey-950 hover:bg-white px-4 py-3 rounded-full w-full text-center tracking-wider"
-          type="submit">
+          type="submit" disabled>
           SUBMIT
         </button>
-      </form>
+      </form>"},{ 
     </article>
 
     <!-- Rating state end -->

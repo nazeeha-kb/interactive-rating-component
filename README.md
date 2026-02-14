@@ -30,3 +30,13 @@ Users should be able to:
 - TailwindCSS
 - Flexbox
 - Mobile-first workflow
+
+### How selected Rating is stored in state handling.
+
+- When a number is clicked, its value is written into a small central store in main.js via store.set(value).
+- The store keeps the rating as a Number in memory and also saves it to localStorage so it can survive a page reload. 
+- UI code subscribes to the store, so the selected button gets the .selected class and the Submit button is enabled automatically. 
+- On submit the app reads the value with store.get() and displays it on the thank-you screen; if the store is null, submission is blocked.
+
+#### What is state handling?
+State handling means a single source of truth for app data with a clear API to read/update and a way for the UI to subscribe/react to changes (often with persistence/validation).
